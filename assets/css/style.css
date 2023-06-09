@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.8fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.3fr;
+    grid-template-areas: 
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
+
+.box {
+    border: solid 1px rgb(75, 69, 69);
+}
+
+.header {
+    background-color: #F17300;
+    grid-area: header;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;   
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.word_phone {
+    color: black;
+}
+
+
+.sidebar {
+    background-color: #3E7CB1;
+    grid-area: sidebar;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    text-decoration: none; color: #000;
+}
+
+.categorias {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main {
+    background-color: #CDC7E5;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 900px;
+    padding-top: 40px;
+}
+
+.box_main {
+    background-color: #FFFBDB;
+    margin-left: 50px;
+    border-radius: 30px;
+    max-width: 255px;
+    height: 400px;
+    box-shadow: 0.2rem 0.2rem 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    border-radius: 30px;
+    height: 240px;
+    width: 200px;
+}
+
+.boton_comprar {
+    width: 150px;
+    height: 20px;
+    background-color: #CDC7E5;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(56, 54, 54);
+    box-shadow: 0.2rem 0.2rem 1rem 0.1rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer {
+    background-color: silver;
+    grid-area: footer;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
